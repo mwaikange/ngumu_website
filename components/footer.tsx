@@ -2,16 +2,16 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-[#101827] px-5 py-12 text-[#d7e2f0] sm:px-8 lg:px-0">
+    <footer className="bg-[#101827] px-5 pb-5 pt-12 text-[#d7e2f0] sm:px-8 lg:px-0">
       <div className="mx-auto max-w-[1216px]">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-16">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.1fr_1.1fr_1fr] md:gap-16">
           <div>
-            <h3 className="font-heading text-lg font-bold text-white">{"About Ngumu's Eye"}</h3>
+            <h3 className="font-heading text-base font-bold text-white">{"About Ngumu's Eye"}</h3>
             <p className="mt-5 max-w-sm text-sm leading-6">A community-powered safety platform for Namibia that makes incident reporting structured, verified, and actionable.</p>
           </div>
 
           <div>
-            <h3 className="font-heading text-lg font-bold text-white">Support</h3>
+            <h3 className="font-heading text-base font-bold text-white">Support</h3>
             <div className="mt-5 space-y-3 text-sm">
               <p><strong>Email:</strong>{" "}<a href="mailto:ngumuseye@gmail.com" className="transition-colors hover:text-white">ngumuseye@gmail.com</a></p>
               <p><strong>WhatsApp:</strong>{" "}<a href="https://wa.me/264816802064" className="transition-colors hover:text-white">+264 81 680 2064</a></p>
@@ -20,7 +20,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-heading text-lg font-bold text-white">Legal</h3>
+            <h3 className="font-heading text-base font-bold text-white">Legal</h3>
             <div className="mt-5 space-y-3 text-sm">
               <p><Link href="/privacy-policy" className="transition-colors hover:text-white">Privacy Policy</Link></p>
               <p><Link href="#terms" className="transition-colors hover:text-white">Terms of Service</Link></p>
