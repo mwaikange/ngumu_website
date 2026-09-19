@@ -102,10 +102,10 @@ export function DownloadSection() {
           {/* Google Play Store (Coming Soon) */}
           <div className="md:col-span-1 scroll-animate opacity-0 translate-y-5 transition-all duration-600">
             <div className="bg-gray-100 border-2 border-dashed border-gray-300 p-8 rounded-lg text-center transition-all duration-300 hover:border-blue-900 hover:bg-slate-50">
-              <div className="text-5xl mb-3">🎮</div>
+              <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-play/default.svg" alt="Google Play" className="mx-auto mb-3 h-12 w-12" />
               <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Google Play Store</h3>
               <div className="bg-gray-200 text-gray-600 font-semibold py-3 px-4 rounded-lg mb-4">
-                {"🔄 Coming Soon"}
+                {"Coming Soon"}
               </div>
               <p className="text-sm text-gray-600">
                 {"We're working on bringing Ngumu's Eye to the Google Play Store for easier access and updates."}
@@ -116,10 +116,10 @@ export function DownloadSection() {
           {/* Apple App Store (Coming Soon) */}
           <div className="md:col-span-1 scroll-animate opacity-0 translate-y-5 transition-all duration-600">
             <div className="bg-gray-100 border-2 border-dashed border-gray-300 p-8 rounded-lg text-center transition-all duration-300 hover:border-blue-900 hover:bg-slate-50">
-              <div className="text-5xl mb-3">🍎</div>
+              <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/apple/default.svg" alt="Apple App Store" className="mx-auto mb-3 h-12 w-12" />
               <h3 className="text-xl font-bold text-gray-900 mb-2 font-heading">Apple App Store</h3>
               <div className="bg-gray-200 text-gray-600 font-semibold py-3 px-4 rounded-lg mb-4">
-                {"🔄 Coming Soon"}
+                {"Coming Soon"}
               </div>
               <p className="text-sm text-gray-600">
                 {"iOS support is in development. We're building an equally powerful experience for Apple users."}
