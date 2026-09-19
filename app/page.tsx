@@ -1,26 +1,5 @@
-import { Navbar } from "@/components/navbar"
-import { HeroSection } from "@/components/hero-section"
-import { TrustSection } from "@/components/trust-section"
-import { HowItWorksSection } from "@/components/how-it-works-section"
-import { FeaturesSection } from "@/components/features-section"
-import { DownloadSection } from "@/components/download-section"
-import { FAQSection } from "@/components/faq-section"
-import { CTASection } from "@/components/cta-section"
-import { Footer } from "@/components/footer"
-import Link from "next/link"
+import { LandingPage } from "@/components/landing-page"
 
 export default function Home() {
-  return (
-    <main className="min-h-screen">
-      <Navbar />
-      <HeroSection />
-      <TrustSection />
-      <HowItWorksSection />
-      <FeaturesSection />
-      <DownloadSection />
-      <FAQSection />
-      <CTASection />
-      <Footer />
-    </main>
-  )
+  return <LandingPage />
 }

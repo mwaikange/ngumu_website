@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ngumu's Eye - Community Safety Platform",
-  description: "Ngumu's Eye is a trusted community safety platform that helps you report incidents, track verification, and stay informed about what's happening in your neighborhood.",
+  title: "Ngumu's Eye | Community safety, made actionable",
+  description: "Ngumu's Eye helps communities report incidents, understand trust, and stay connected through one practical safety platform.",
   generator: 'v0.app',
   keywords: ['community safety', 'incident reporting', 'safety app', 'community alerts', 'Namibia', 'privacy policy', 'account removal'],
   authors: [{ name: "Ngumu's Eye" }],
