@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-[#101827] px-5 pb-5 pt-12 text-[#d7e2f0] sm:px-8 lg:px-0">
+    <footer className="bg-[#071021] px-5 pb-5 pt-12 text-[#d7e2f0] sm:px-8 lg:px-0">
       <div className="mx-auto max-w-[1216px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.1fr_1.1fr_1fr] md:gap-16">
           <div>
@@ -23,7 +23,7 @@ export function Footer() {
             <h3 className="font-heading text-base font-bold text-white">Legal</h3>
             <div className="mt-5 space-y-3 text-sm">
               <p><Link href="/privacy-policy" className="transition-colors hover:text-white">Privacy Policy</Link></p>
-              <p><Link href="#terms" className="transition-colors hover:text-white">Terms of Service</Link></p>
+              <p><Link href="/terms-of-service" className="transition-colors hover:text-white">Terms of Service</Link></p>
               <p><Link href="/request-account-removal" className="transition-colors hover:text-white">Security</Link></p>
             </div>
           </div>

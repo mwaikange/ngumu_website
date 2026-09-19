@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { Footer } from "@/components/footer"
 
 const apkUrl = "https://drive.google.com/uc?export=download&id=1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko"
 
@@ -35,7 +36,7 @@ export function LandingPage() {
 
       <section id="plans" className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:px-10 lg:py-28"><div><p className="text-sm font-bold uppercase tracking-[.18em] text-[#078fe8]">Membership that fits</p><h2 className="mt-4 font-heading text-4xl font-extrabold leading-tight tracking-[-.045em] sm:text-6xl">More support for more of your people.</h2><p className="mt-6 max-w-lg text-lg leading-8 text-[#60708a]">Choose a membership plan that fits your household. Plans are paid locally through PaySME, making activation simple and familiar.</p><a href={apkUrl} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-xl bg-[#10234a] px-6 py-3.5 font-bold text-white hover:bg-[#1c3b73]">Explore membership in the app</a></div><div className="flex justify-center gap-[-1rem] lg:justify-end"><Image src="/phone-membership-new.png" alt="Ngumu's Eye membership packages screen" width={444} height={700} className="relative z-10 w-[245px] drop-shadow-2xl" /><Image src="/phone-payment.png" alt="Ngumu's Eye payment request screen" width={444} height={700} className="-ml-16 mt-20 hidden w-[220px] drop-shadow-2xl sm:block" /></div></section>
 
-      <footer className="bg-[#071021] px-5 py-10 text-sm text-[#9eabc0] sm:px-8 lg:px-10"><div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between"><p className="font-semibold text-white">Ngumu&apos;s Eye</p><div className="flex flex-wrap gap-5"><a href="/privacy-policy" className="hover:text-white">Privacy Policy</a><a href="/terms-of-service" className="hover:text-white">Terms of Service</a><a href="#plans" className="hover:text-white">Membership</a><a href="/request-account-removal" className="hover:text-white">Request Account Removal</a></div><p>© 2026 Ngumu&apos;s Eye</p></div></footer>
+      <Footer />
     </main>
   )
 }

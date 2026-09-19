@@ -1,4 +1,6 @@
 import type { Metadata } from "next"
+import Link from "next/link"
+import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Terms of Service | Ngumu's Eye",
@@ -20,8 +22,12 @@ const sections = [
 
 export default function TermsOfServicePage() {
   return (
-    <main className="min-h-screen bg-[#f7f9fc] text-[#101b33]">
-      <header className="bg-[#10234a] px-5 py-8 text-white sm:px-8">
+    <div className="min-h-screen bg-[#f7f9fc] text-[#101b33]">
+      <header className="bg-[#eaf5ff] px-5 py-6 sm:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between">
+          <Link href="/" className="flex items-center gap-3" aria-label="Ngumu's Eye home"><span className="grid size-10 place-items-center rounded-xl bg-[#10234a] text-xs font-black text-white">NE</span><span className="font-heading text-lg font-bold">Ngumu&apos;s Eye</span></Link>
+          <Link href="/" className="inline-flex items-center gap-2 rounded-lg border border-[#c7d5e5] bg-white px-4 py-2 text-sm font-semibold text-[#10234a] hover:border-[#078fe8]">← Back home</Link>
+        </div>
         <div className="mx-auto max-w-4xl">
           <a href="/" className="text-sm font-semibold text-[#9edbff]">Ngumu&apos;s Eye</a>
           <h1 className="mt-8 font-heading text-4xl font-extrabold tracking-tight sm:text-6xl">Terms of Service</h1>
@@ -39,6 +45,7 @@ export default function TermsOfServicePage() {
           ))}
         </div>
       </article>
-    </main>
+      <Footer />
+    </div>
   )
 }

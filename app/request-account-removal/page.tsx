@@ -6,6 +6,7 @@ import { ArrowLeft, CheckCircle2, ShieldCheck } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { Footer } from '@/components/footer'
 
 export default function RequestAccountRemovalPage() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
@@ -21,9 +22,10 @@ export default function RequestAccountRemovalPage() {
   }
 
   return (
-    <main className="min-h-screen bg-slate-50 px-4 py-10 text-slate-950">
-      <div className="mx-auto max-w-5xl">
-        <Link href="/" className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-indigo-900 hover:underline"><ArrowLeft data-icon="inline-start" /> Back to Ngumu&apos;s Eye</Link>
+    <main className="min-h-screen bg-[#f7f9fc] text-slate-950">
+      <header className="bg-[#eaf5ff] px-5 py-6 sm:px-8"><div className="mx-auto flex max-w-7xl items-center justify-between"><Link href="/" className="flex items-center gap-3" aria-label="Ngumu's Eye home"><span className="grid size-10 place-items-center rounded-xl bg-[#10234a] text-xs font-black text-white">NE</span><span className="font-heading text-lg font-bold">Ngumu&apos;s Eye</span></Link><Link href="/" className="inline-flex items-center gap-2 rounded-lg border border-[#c7d5e5] bg-white px-4 py-2 text-sm font-semibold text-[#10234a] hover:border-[#078fe8]">← Back home</Link></div></header>
+      <div className="mx-auto max-w-5xl px-4 py-10">
+        <Link href="/" className="mb-8 hidden items-center gap-2 text-sm font-semibold text-indigo-900 hover:underline"><ArrowLeft data-icon="inline-start" /> Back to Ngumu&apos;s Eye</Link>
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
           <aside className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
             <h1 className="text-2xl font-bold text-indigo-950">What happens next</h1>
@@ -38,6 +40,7 @@ export default function RequestAccountRemovalPage() {
           </section>
         </div>
       </div>
+      <Footer />
     </main>
   )
 }
