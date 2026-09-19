@@ -4,61 +4,40 @@ import Image from "next/image"
 
 const apkUrl = "https://drive.google.com/uc?export=download&id=1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko"
 
-const features = [
-  ["Report with context", "Share incidents with the details your community needs to understand what happened."],
-  ["Trust that grows", "See community and admin trust signals that make information easier to evaluate."],
-  ["One place for your family", "Manage family membership, subscriptions, and your case deck from one profile."],
+const screens = [
+  { image: "/phone-feed.png", title: "Stay close to what matters", text: "A community feed that turns local updates into useful, trusted awareness." },
+  { image: "/phone-filedeck.png", title: "Keep every case organised", text: "Reports, counselling, device tracking, and follow-ups live in one clear file deck." },
+  { image: "/phone-report.png", title: "Report with the right context", text: "A guided incident flow helps you capture the details people need to respond." },
+]
+
+const benefits = [
+  ["01", "See what is happening", "Follow relevant updates without the noise. Find verified, nearby information in one place."],
+  ["02", "Build community trust", "Transparent trust signals help people understand who is sharing information and why it matters."],
+  ["03", "Support your family", "Choose a plan, manage access, and keep the people closest to you connected."],
 ]
 
 export function LandingPage() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f7f9fc] text-[#0d1830]">
-      <header className="absolute inset-x-0 top-0 z-20">
+    <main className="min-h-screen overflow-hidden bg-[#f7f9fc] text-[#101b33]">
+      <header className="absolute inset-x-0 top-0 z-30">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
-          <a href="#top" className="flex items-center gap-3" aria-label="Ngumu's Eye home">
-            <span className="grid size-10 place-items-center rounded-xl bg-[#0c1830] text-sm font-black text-white shadow-lg">NE</span>
-            <span className="font-heading text-lg font-bold tracking-tight">Ngumu&apos;s Eye</span>
-          </a>
-          <nav className="hidden items-center gap-8 text-sm font-semibold text-[#536078] md:flex">
-            <a href="#why" className="transition hover:text-[#168ee8]">Why Ngumu&apos;s Eye</a>
-            <a href="#membership" className="transition hover:text-[#168ee8]">Membership</a>
-            <a href="#download" className="transition hover:text-[#168ee8]">Download</a>
-          </nav>
-          <a href={apkUrl} target="_blank" rel="noreferrer" className="rounded-full bg-[#168ee8] px-5 py-2.5 text-sm font-bold text-white shadow-[0_10px_25px_rgba(22,142,232,.25)] transition hover:-translate-y-0.5 hover:bg-[#0876c8]">Get the APK</a>
+          <a href="#top" className="flex items-center gap-3" aria-label="Ngumu's Eye home"><span className="grid size-10 place-items-center rounded-xl bg-[#10234a] text-xs font-black text-white">NE</span><span className="font-heading text-lg font-bold tracking-tight">Ngumu&apos;s Eye</span></a>
+          <nav className="hidden items-center gap-8 text-sm font-semibold text-[#60708a] md:flex"><a href="#platform" className="hover:text-[#078fe8]">Platform</a><a href="#plans" className="hover:text-[#078fe8]">Membership</a><a href="#download" className="hover:text-[#078fe8]">Download</a></nav>
+          <a href={apkUrl} target="_blank" rel="noreferrer" className="rounded-full bg-[#078fe8] px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-[#078fe8]/20 hover:bg-[#0577c5]">Get the APK</a>
         </div>
       </header>
 
-      <section id="top" className="relative isolate bg-[#eef6ff] pt-32 lg:pt-40">
-        <div className="absolute -right-24 top-20 -z-10 size-80 rounded-full bg-[#d9edff] blur-3xl" />
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1fr_0.9fr] lg:px-10 lg:pb-24">
-          <div className="max-w-2xl">
-            <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#b9dbf6] bg-white/70 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#168ee8]"><span className="size-2 rounded-full bg-[#f3a72f]" /> Built for safer communities</p>
-            <h1 className="font-heading text-5xl font-extrabold leading-[1.02] tracking-[-0.05em] text-[#0c1830] sm:text-6xl lg:text-7xl">Your community has a voice. <span className="text-[#168ee8]">Make it count.</span></h1>
-            <p className="mt-7 max-w-xl text-lg leading-8 text-[#536078]">Ngumu&apos;s Eye makes community safety structured, visible, and actionable — from the first report to the people who can help.</p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a href={apkUrl} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-xl bg-[#168ee8] px-7 py-4 font-bold text-white shadow-[0_14px_30px_rgba(22,142,232,.28)] transition hover:-translate-y-1 hover:bg-[#0876c8]">Download the Android APK <span className="ml-2">↗</span></a>
-              <a href="#why" className="inline-flex items-center justify-center rounded-xl border border-[#cbd6e5] bg-white px-7 py-4 font-bold text-[#0c1830] transition hover:border-[#168ee8] hover:text-[#168ee8]">Explore the platform</a>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-[#65728a]"><span>Android 8.0+</span><span>Free to download</span><span>Built for Namibia</span></div>
-          </div>
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="absolute bottom-2 right-10 h-16 w-64 rounded-full bg-[#168ee8]/20 blur-2xl" />
-            <Image src="/phone-profile.png" alt="Ngumu's Eye profile screen showing trust and membership details" width={444} height={700} priority className="relative w-[290px] drop-shadow-[0_35px_40px_rgba(12,24,48,.22)] sm:w-[340px] lg:w-[390px]" />
-            <div className="absolute -bottom-3 -left-2 hidden rounded-2xl border border-white/80 bg-white p-4 shadow-xl sm:block lg:left-0"><p className="text-xs font-bold uppercase tracking-wider text-[#8995a8]">Community trust</p><p className="mt-1 text-2xl font-extrabold text-[#0c1830]">Clearer. Closer. Safer.</p></div>
-          </div>
-        </div>
-      </section>
+      <section id="top" className="relative bg-[#eaf5ff] pt-32 lg:pt-40"><div className="absolute -right-40 top-0 size-[34rem] rounded-full bg-[#d8edff] blur-3xl" /><div className="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-20 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:px-10 lg:pb-28"><div className="relative z-10 max-w-2xl"><div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#b9dcf6] bg-white/70 px-4 py-2 text-xs font-bold uppercase tracking-[.16em] text-[#078fe8]"><span className="size-2 rounded-full bg-[#f2aa35]" /> Community safety, made actionable</div><h1 className="font-heading text-5xl font-extrabold leading-[.98] tracking-[-.055em] sm:text-6xl lg:text-8xl">Look out for <span className="text-[#078fe8]">your people.</span></h1><p className="mt-7 max-w-xl text-lg leading-8 text-[#60708a]">Ngumu&apos;s Eye brings reporting, community awareness, trust, and family support into one calm, practical mobile experience.</p><div className="mt-9 flex flex-col gap-3 sm:flex-row"><a href={apkUrl} target="_blank" rel="noreferrer" className="inline-flex justify-center rounded-xl bg-[#078fe8] px-7 py-4 font-bold text-white shadow-xl shadow-[#078fe8]/25 hover:-translate-y-0.5 hover:bg-[#0577c5]">Download the Android APK <span className="ml-2">↗</span></a><a href="#platform" className="inline-flex justify-center rounded-xl border border-[#c7d5e5] bg-white px-7 py-4 font-bold hover:border-[#078fe8] hover:text-[#078fe8]">See how it works</a></div><div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-[#708097]"><span>Android 8.0+</span><span>Free to download</span><span>Made for Namibia</span></div></div><div className="relative flex justify-center lg:justify-end"><div className="absolute bottom-8 h-20 w-72 rounded-full bg-[#078fe8]/20 blur-3xl" /><Image src="/phone-feed.png" alt="Ngumu's Eye community feed screen" width={444} height={700} priority className="relative w-[290px] drop-shadow-[0_35px_40px_rgba(16,35,74,.25)] sm:w-[350px] lg:w-[405px]" /></div></div></section>
 
-      <section id="why" className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28">
-        <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-end"><div><p className="text-sm font-bold uppercase tracking-[0.18em] text-[#168ee8]">More than a report</p><h2 className="mt-4 font-heading text-4xl font-extrabold leading-tight tracking-[-0.04em] sm:text-5xl">A better way to look out for each other.</h2></div><p className="max-w-xl text-lg leading-8 text-[#65728a]">From useful context to visible trust signals, Ngumu&apos;s Eye helps neighbors move from uncertainty to informed action.</p></div>
-        <div className="mt-12 grid gap-5 md:grid-cols-3">{features.map(([title, text], index) => <article key={title} className="rounded-3xl border border-[#e1e8f1] bg-white p-7 shadow-[0_12px_40px_rgba(12,24,48,.05)]"><div className="grid size-11 place-items-center rounded-2xl bg-[#e8f5ff] font-heading text-lg font-extrabold text-[#168ee8]">0{index + 1}</div><h3 className="mt-7 font-heading text-xl font-bold">{title}</h3><p className="mt-3 leading-7 text-[#65728a]">{text}</p></article>)}</div>
-      </section>
+      <section id="platform" className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28"><div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-end"><div><p className="text-sm font-bold uppercase tracking-[.18em] text-[#078fe8]">One platform, many ways to help</p><h2 className="mt-4 font-heading text-4xl font-extrabold leading-tight tracking-[-.045em] sm:text-6xl">From first alert to follow-through.</h2></div><p className="max-w-xl text-lg leading-8 text-[#60708a]">Every screen has a job: make it easier to notice, report, organise, and support what matters in your community.</p></div><div className="mt-14 grid gap-16 lg:grid-cols-3">{screens.map((screen, index) => <article key={screen.image} className={`flex flex-col ${index === 1 ? "lg:mt-20" : ""}`}><div className="flex min-h-[480px] items-end justify-center rounded-[2rem] bg-[#edf5fb] px-5 pt-8"><Image src={screen.image} alt={screen.title} width={444} height={700} className="w-[245px] drop-shadow-[0_20px_28px_rgba(16,35,74,.2)]" /></div><p className="mt-7 text-sm font-bold text-[#078fe8]">0{index + 1}</p><h3 className="mt-2 font-heading text-2xl font-bold">{screen.title}</h3><p className="mt-3 leading-7 text-[#60708a]">{screen.text}</p></article>)}</div></section>
 
-      <section id="membership" className="bg-[#0c1830] text-white"><div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[.9fr_1.1fr] lg:px-10 lg:py-28"><div><p className="text-sm font-bold uppercase tracking-[0.18em] text-[#72c5ff]">Membership, made simple</p><h2 className="mt-4 font-heading text-4xl font-extrabold leading-tight tracking-[-0.04em] sm:text-5xl">Support the people who matter most.</h2><p className="mt-6 max-w-lg text-lg leading-8 text-[#b7c5da]">Family plans bring shared access, file management, priority response, and support into one calm, connected experience.</p><a href={apkUrl} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-xl bg-[#f3a72f] px-6 py-3.5 font-bold text-[#0c1830] transition hover:bg-[#ffc15a]">Start with the app</a></div><div className="flex justify-center lg:justify-end"><Image src="/phone-membership.png" alt="Ngumu's Eye membership packages screen showing family plans" width={444} height={700} className="w-[290px] sm:w-[340px] lg:w-[370px]" /></div></div></section>
+      <section className="bg-[#10234a] text-white"><div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.15fr_.85fr] lg:px-10 lg:py-28"><div><p className="text-sm font-bold uppercase tracking-[.18em] text-[#6fc9ff]">Designed for real life</p><h2 className="mt-4 max-w-2xl font-heading text-4xl font-extrabold leading-tight tracking-[-.045em] sm:text-6xl">Clarity when the moment calls for it.</h2><div className="mt-10 grid gap-7 sm:grid-cols-3">{benefits.map(([number, title, text]) => <div key={number}><p className="text-sm font-bold text-[#f3ae3c]">{number}</p><h3 className="mt-3 text-lg font-bold">{title}</h3><p className="mt-2 text-sm leading-6 text-[#b9c9df]">{text}</p></div>)}</div></div><div className="flex justify-center lg:justify-end"><Image src="/phone-report.png" alt="Ngumu's Eye guided incident report screen" width={444} height={700} className="w-[285px] drop-shadow-2xl" /></div></div></section>
 
-      <section id="download" className="bg-[#f3f7fb] px-5 py-20 text-center sm:px-8 lg:py-24"><p className="text-sm font-bold uppercase tracking-[0.18em] text-[#168ee8]">Ready when you are</p><h2 className="mx-auto mt-4 max-w-3xl font-heading text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">Download Ngumu&apos;s Eye and join the conversation.</h2><p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#65728a]">Install the official Android APK and take a more active role in your community.</p><a href={apkUrl} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-xl bg-[#168ee8] px-8 py-4 font-bold text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#0876c8]">Download APK</a></section>
+      <section id="plans" className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:px-10 lg:py-28"><div><p className="text-sm font-bold uppercase tracking-[.18em] text-[#078fe8]">Membership that fits</p><h2 className="mt-4 font-heading text-4xl font-extrabold leading-tight tracking-[-.045em] sm:text-6xl">More support for more of your people.</h2><p className="mt-6 max-w-lg text-lg leading-8 text-[#60708a]">Family plans make shared access simple, while individual plans keep essential tools within reach. Choose what works for your household.</p><a href={apkUrl} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-xl bg-[#10234a] px-6 py-3.5 font-bold text-white hover:bg-[#1c3b73]">Explore membership in the app</a></div><div className="flex justify-center gap-[-1rem] lg:justify-end"><Image src="/phone-profile.png" alt="Ngumu's Eye profile and subscription screen" width={444} height={700} className="relative z-10 w-[245px] drop-shadow-2xl" /><Image src="/phone-payment.png" alt="Ngumu's Eye payment request screen" width={444} height={700} className="-ml-16 mt-20 hidden w-[220px] drop-shadow-2xl sm:block" /></div></section>
 
-      <footer className="bg-[#071021] px-5 py-10 text-sm text-[#9aaac0] sm:px-8 lg:px-10"><div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between"><p className="font-semibold text-white">Ngumu&apos;s Eye</p><div className="flex flex-wrap gap-5"><a href="/privacy-policy" className="transition hover:text-white">Privacy Policy</a><a href="#membership" className="transition hover:text-white">Membership</a><a href="/request-account-removal" className="transition hover:text-white">Request Account Removal</a></div><p>© 2026 Ngumu&apos;s Eye</p></div></footer>
+      <section id="download" className="bg-[#f0f7fc] px-5 py-20 text-center sm:px-8 lg:py-24"><p className="text-sm font-bold uppercase tracking-[.18em] text-[#078fe8]">Start with one tap</p><h2 className="mx-auto mt-4 max-w-3xl font-heading text-4xl font-extrabold tracking-[-.045em] sm:text-6xl">A safer community starts with showing up.</h2><p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#60708a]">Download the official Android APK and bring your voice, your reports, and your people closer together.</p><a href={apkUrl} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-xl bg-[#078fe8] px-8 py-4 font-bold text-white shadow-xl shadow-[#078fe8]/20 hover:-translate-y-0.5 hover:bg-[#0577c5]">Download APK</a></section>
+
+      <footer className="bg-[#071021] px-5 py-10 text-sm text-[#9eabc0] sm:px-8 lg:px-10"><div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between"><p className="font-semibold text-white">Ngumu&apos;s Eye</p><div className="flex flex-wrap gap-5"><a href="/privacy-policy" className="hover:text-white">Privacy Policy</a><a href="#plans" className="hover:text-white">Membership</a><a href="/request-account-removal" className="hover:text-white">Request Account Removal</a></div><p>© 2026 Ngumu&apos;s Eye</p></div></footer>
     </main>
   )
 }
