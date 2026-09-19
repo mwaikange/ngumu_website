@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export function Footer() {
@@ -6,7 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1216px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.1fr_1.1fr_1fr] md:gap-16">
           <div>
-            <h3 className="font-heading text-base font-bold text-white">{"About Ngumu's Eye"}</h3>
+            <div className="flex items-center gap-3"><Image src="/ngumus-eye-logo.png" alt="Ngumu&apos;s Eye logo" width={42} height={42} className="size-10 object-contain" /><h3 className="font-heading text-base font-bold text-white">{"About Ngumu's Eye"}</h3></div>
             <p className="mt-5 max-w-sm text-sm leading-6">A community-powered safety platform for Namibia that makes incident reporting structured, verified, and actionable.</p>
           </div>
 
