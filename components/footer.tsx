@@ -2,55 +2,36 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-[#101827] px-5 py-12 text-[#d7e2f0] sm:px-8 lg:px-0">
+      <div className="mx-auto max-w-[1216px]">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-16">
           <div>
-            <h3 className="text-white font-bold mb-4 font-heading">{"About Ngumu's Eye"}</h3>
-            <p className="text-sm leading-relaxed">
-              A community-powered safety platform for Namibia that makes incident reporting structured, verified, and actionable.
-            </p>
+            <h3 className="font-heading text-lg font-bold text-white">{"About Ngumu's Eye"}</h3>
+            <p className="mt-5 max-w-sm text-sm leading-6">A community-powered safety platform for Namibia that makes incident reporting structured, verified, and actionable.</p>
           </div>
-          
+
           <div>
-            <h3 className="text-white font-bold mb-4 font-heading">Support</h3>
-            <div className="text-sm space-y-2">
-              <p>
-                {"📧 "}<strong>Email:</strong>{" "}
-                <a href="mailto:ngumuseye@gmail.com" className="hover:text-white transition-colors">
-                  ngumuseye@gmail.com
-                </a>
-              </p>
-              <p>
-                {"📱 "}<strong>WhatsApp:</strong>{" "}
-                <a href="https://wa.me/264816802064" className="hover:text-white transition-colors">
-                  +264 81 680 2064
-                </a>
-              </p>
-              <p>
-                {"🌐 "}<strong>Website:</strong>{" "}
-                <a href="https://www.ngumus-eye.site" className="hover:text-white transition-colors">
-                  www.ngumus-eye.site
-                </a>
-              </p>
+            <h3 className="font-heading text-lg font-bold text-white">Support</h3>
+            <div className="mt-5 space-y-3 text-sm">
+              <p><strong>Email:</strong>{" "}<a href="mailto:ngumuseye@gmail.com" className="transition-colors hover:text-white">ngumuseye@gmail.com</a></p>
+              <p><strong>WhatsApp:</strong>{" "}<a href="https://wa.me/264816802064" className="transition-colors hover:text-white">+264 81 680 2064</a></p>
+              <p><strong>Website:</strong>{" "}<a href="https://www.ngumus-eye.site" className="transition-colors hover:text-white">www.ngumus-eye.site</a></p>
             </div>
           </div>
-          
+
           <div>
-            <h3 className="text-white font-bold mb-4 font-heading">Legal</h3>
-            <div className="text-sm space-y-2">
-              <p><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></p>
-              <p><Link href="#terms" className="hover:text-white transition-colors">Terms of Service</Link></p>
-              <p><Link href="/request-account-removal" className="hover:text-white transition-colors">Request Account Removal</Link></p>
+            <h3 className="font-heading text-lg font-bold text-white">Legal</h3>
+            <div className="mt-5 space-y-3 text-sm">
+              <p><Link href="/privacy-policy" className="transition-colors hover:text-white">Privacy Policy</Link></p>
+              <p><Link href="#terms" className="transition-colors hover:text-white">Terms of Service</Link></p>
+              <p><Link href="/request-account-removal" className="transition-colors hover:text-white">Security</Link></p>
             </div>
           </div>
         </div>
-        
-        <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm">{"© 2026 Ngumu's Eye. All rights reserved. | Social Welfare & Community App | Namibia"}</p>
-            <p className="text-sm mt-4 md:mt-0">{"Ngumu's Eye v1.0.0.1"}</p>
-          </div>
+
+        <div className="mt-10 flex flex-col gap-4 border-t border-[#334155] pt-8 text-sm md:flex-row md:items-center md:justify-between">
+          <p>{"© 2026 Ngumu's Eye. All rights reserved. | Social Welfare & Community App | Namibia"}</p>
+          <p>{"Ngumu's Eye v1.0.0.1"}</p>
         </div>
       </div>
     </footer>
