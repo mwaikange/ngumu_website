@@ -9,7 +9,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-2">
             <Image 
-              src="https://tdkeamquekkpalauorpk.supabase.co/storage/v1/object/public/email%20banner/ngumu-logo.png" 
+              src="/ngumus-eye-logo.png" 
               alt="Ngumu's Eye Logo" 
               width={40} 
               height={40}

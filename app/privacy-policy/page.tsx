@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
     <div className="min-h-screen bg-[#f7f9fc] text-[#101b33]">
       <header className="bg-[#eaf5ff] px-5 py-6 sm:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <Link href="/" className="flex items-center gap-3" aria-label="Ngumu's Eye home"><span className="grid size-10 place-items-center rounded-xl bg-[#10234a] text-xs font-black text-white">NE</span><span className="font-heading text-lg font-bold">Ngumu&apos;s Eye</span></Link>
+          <Link href="/" className="flex items-center gap-3" aria-label="Ngumu's Eye home"><img src="/ngumus-eye-logo.png" alt="Ngumu&apos;s Eye logo" className="size-10 object-contain" /><span className="font-heading text-lg font-bold">Ngumu&apos;s Eye</span></Link>
           <Link href="/" className="inline-flex items-center gap-2 rounded-lg border border-[#c7d5e5] bg-white px-4 py-2 text-sm font-semibold text-[#10234a] hover:border-[#078fe8]">← Back home</Link>
         </div>
       </header>
