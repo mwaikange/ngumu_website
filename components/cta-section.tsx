@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function CTASection() {
   return (
     <section className="py-20 gradient-hero text-white">
@@ -16,6 +18,9 @@ export function CTASection() {
         >
           {"Download Ngumu's Eye APK Now"}
         </a>
+        <Link href="/request-account-removal" className="mt-4 inline-block rounded-lg border border-white/70 px-8 py-3 font-semibold text-white hover:bg-white hover:text-indigo-950">
+          Request Account Removal
+        </Link>
         <p className="text-blue-100 mt-6 text-sm">
           {"v1.0.0.1 • Android 8.0+ • ~45 MB • Free"}
         </p>

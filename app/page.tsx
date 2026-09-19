@@ -7,6 +7,7 @@ import { DownloadSection } from "@/components/download-section"
 import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
+import Link from "next/link"
 
 export default function Home() {
   return (

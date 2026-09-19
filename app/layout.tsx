@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Ngumu's Eye - Community Safety Platform",
   description: "Ngumu's Eye is a trusted community safety platform that helps you report incidents, track verification, and stay informed about what's happening in your neighborhood.",
   generator: 'v0.app',
-  keywords: ['community safety', 'neighborhood watch', 'incident reporting', 'safety app', 'community alerts', 'Kenya', 'neighborhood security'],
+  keywords: ['community safety', 'incident reporting', 'safety app', 'community alerts', 'Namibia', 'privacy policy', 'account removal'],
   authors: [{ name: "Ngumu's Eye" }],
   creator: "Ngumu's Eye",
   publisher: "Ngumu's Eye",
