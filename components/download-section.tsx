@@ -85,7 +85,7 @@ export function DownloadSection() {
               </div>
               
               <a 
-                href="https://drive.google.com/file/d/1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko/view?usp=drivesdk" 
+                href="https://drive.google.com/uc?export=download&id=1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko" 
                 className="cta-button w-full py-3 rounded-lg text-white font-bold text-center block"
                 target="_blank"
                 rel="noopener noreferrer"

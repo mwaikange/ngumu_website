@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 export function CTASection() {
   return (
     <section className="py-20 gradient-hero text-white">
@@ -11,16 +9,13 @@ export function CTASection() {
           Join thousands of community members who are making their neighborhoods safer with verified incident reporting and real-time awareness.
         </p>
         <a 
-          href="https://drive.google.com/file/d/1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko/view?usp=drivesdk"
+          href="https://drive.google.com/uc?export=download&id=1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block cta-button px-10 py-4 rounded-lg text-white font-bold text-lg hover:shadow-2xl"
         >
           {"Download Ngumu's Eye APK Now"}
         </a>
-        <Link href="/request-account-removal" className="mt-4 inline-block rounded-lg border border-white/70 px-8 py-3 font-semibold text-white hover:bg-white hover:text-indigo-950">
-          Request Account Removal
-        </Link>
         <p className="text-blue-100 mt-6 text-sm">
           {"v1.0.0.1 • Android 8.0+ • ~45 MB • Free"}
         </p>

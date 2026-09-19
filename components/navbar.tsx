@@ -19,7 +19,7 @@ export function Navbar() {
             <span className="font-bold text-lg text-gray-900 font-heading">{"Ngumu's Eye"}</span>
           </div>
           <a 
-            href="https://drive.google.com/file/d/1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko/view?usp=drivesdk"
+            href="https://drive.google.com/uc?export=download&id=1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button px-6 py-2 rounded-lg text-white font-semibold text-sm"
