@@ -32,7 +32,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-4 border-t border-[#334155] pt-8 text-sm md:flex-row md:items-center md:justify-between">
           <p>{"© 2026 Ngumu's Eye. All rights reserved. | Social Welfare & Community App | Namibia"}</p>
-          <p>App &amp; Site developed By <a href="https://mwaikange.com" target="_blank" rel="noreferrer" className="font-normal text-inherit transition-colors hover:text-[#078fe8]">Mwaikange Software Inc</a></p>
+          <p className="text-xs">App &amp; Site developed By <a href="https://mwaikange.com" target="_blank" rel="noreferrer" className="font-normal text-inherit transition-colors hover:text-[#078fe8]">Mwaikange Software Inc</a></p>
         </div>
       </div>
     </footer>
