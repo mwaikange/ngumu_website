@@ -16,7 +16,7 @@ export function Footer() {
             <div className="mt-5 space-y-3 text-sm">
               <p><strong>Email:</strong>{" "}<a href="mailto:ngumuseye@gmail.com" className="transition-colors hover:text-white">ngumuseye@gmail.com</a></p>
               <p><strong>WhatsApp:</strong>{" "}<a href="https://wa.me/264816802064" className="transition-colors hover:text-white">+264 81 680 2064</a></p>
-              <p><strong>Website:</strong>{" "}<a href="https://www.ngumus-eye.site" className="transition-colors hover:text-white">www.ngumus-eye.site</a></p><p className="max-w-xs leading-6">Ngumu&apos;s Eye Surveillance &amp; Tracing Services CC</p>
+              <p><strong>Website:</strong>{" "}<a href="https://www.ngumus-eye.site" className="transition-colors hover:text-white">www.ngumus-eye.site</a></p><p className="max-w-none whitespace-nowrap text-xs leading-6">Ngumu&apos;s Eye Surveillance &amp; Tracing Services CC</p>
             </div>
           </div>
 
