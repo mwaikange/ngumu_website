@@ -22,7 +22,7 @@ export function LandingPage() {
     <main className="min-h-screen overflow-hidden bg-[#f7f9fc] text-[#101b33]">
       <header className="absolute inset-x-0 top-0 z-30">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
-          <a href="#top" className="flex items-center gap-3" aria-label="Ngumu's Eye home"><Image src="/ngumus-eye-logo.png" alt="Ngumu&apos;s Eye logo" width={40} height={40} priority className="size-10 object-contain" /><span className="font-heading text-lg font-bold tracking-tight">Ngumu&apos;s Eye</span></a>
+          <a href="#top" className="flex items-center gap-3" aria-label="Ngumu's Eye home"><Image src="/ngumus-eye-logo.png" alt="Ngumu&apos;s Eye logo" width={56} height={56} priority className="size-14 object-contain" /><span className="font-heading text-2xl font-extrabold tracking-tight">Ngumu&apos;s Eye</span></a>
           <nav className="hidden items-center gap-8 text-sm font-semibold text-[#60708a] md:flex"><a href="#platform" className="hover:text-[#078fe8]">Platform</a><a href="#plans" className="hover:text-[#078fe8]">Membership</a><a href="#download" className="hover:text-[#078fe8]">Download</a></nav>
           <a href={apkUrl} target="_blank" rel="noreferrer" className="rounded-full bg-[#078fe8] px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-[#078fe8]/20 hover:bg-[#0577c5]">Get the APK</a>
         </div>

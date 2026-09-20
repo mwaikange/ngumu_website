@@ -11,12 +11,12 @@ export function Navbar() {
             <Image 
               src="/ngumus-eye-logo.png" 
               alt="Ngumu's Eye Logo" 
-              width={40} 
-              height={40}
+              width={56} 
+              height={56}
               priority
-              className="w-10 h-10"
+              className="w-14 h-14"
             />
-            <span className="font-bold text-lg text-gray-900 font-heading">{"Ngumu's Eye"}</span>
+            <span className="font-extrabold text-2xl text-gray-900 font-heading">{"Ngumu's Eye"}</span>
           </div>
           <a 
             href="https://drive.google.com/uc?export=download&id=1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko"
