@@ -22,7 +22,7 @@ export function LandingPage() {
     <main className="min-h-screen overflow-hidden bg-[#f7f9fc] text-[#101b33]">
       <header className="absolute inset-x-0 top-0 z-30">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-6 sm:px-8 lg:px-10">
-          <a href="#top" className="font-heading text-sm font-extrabold uppercase tracking-[.12em] text-[#10234a] sm:text-base" aria-label="Ngumu's Eye home">Informed. Safe Communities</a>
+          <a href="#top" className="font-heading text-sm font-extrabold uppercase tracking-[.12em] text-[#10234a] sm:text-base" aria-label="Ngumu's Eye home">SOCIAL WELFARE & COMMUNITY APP</a>
           <nav className="hidden items-center gap-8 text-sm font-semibold text-[#60708a] md:flex"><a href="#platform" className="hover:text-[#078fe8]">Platform</a><a href="#plans" className="hover:text-[#078fe8]">Membership</a><a href="#download" className="hover:text-[#078fe8]">Download</a></nav>
           <a href={apkUrl} target="_blank" rel="noreferrer" className="rounded-full bg-[#078fe8] px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-[#078fe8]/20 hover:bg-[#0577c5]">Get the APK</a>
         </div>
