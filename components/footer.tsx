@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
+const apkUrl = "https://drive.google.com/uc?export=download&id=1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko"
+
 export function Footer() {
   return (
     <footer className="bg-[#071021] px-5 pb-5 pt-12 text-[#d7e2f0] sm:px-8 lg:px-0">
@@ -8,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.1fr_1.1fr_1fr] md:gap-16">
           <div>
             <div className="flex items-center gap-3"><Image src="/ngumus-eye-logo.png" alt="Ngumu&apos;s Eye logo" width={42} height={42} className="size-10 object-contain" /><h3 className="font-heading text-base font-bold text-white">{"About Ngumu's Eye"}</h3></div>
-            <p className="mt-5 max-w-sm text-sm leading-6">A community-powered safety platform for Namibia that makes incident reporting structured, verified, and actionable.</p>
+            <p className="mt-5 max-w-sm text-sm leading-6">A community-powered safety platform for Namibia that makes incident reporting structured, verified, and actionable.</p><div className="mt-5 flex flex-col items-start gap-2"><div className="inline-flex w-[156px] items-center gap-2 rounded-xl bg-black px-3 py-2 text-white"><img src="/apple-logo.svg" alt="Apple" className="size-5 invert" /><span className="leading-tight"><span className="block text-[8px]">Download on the</span><span className="block text-xs font-semibold">App Store</span></span></div><div className="inline-flex w-[156px] items-center gap-2 rounded-xl bg-black px-3 py-2 text-white"><img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-play/default.svg" alt="Google Play" className="size-5" /><span className="leading-tight"><span className="block text-[8px]">GET IT ON</span><span className="block text-xs font-semibold">Google Play</span></span></div><a href={apkUrl} target="_blank" rel="noreferrer" className="inline-flex w-[156px] items-center gap-2 rounded-xl bg-[#168b63] px-3 py-2 text-white"><span className="text-lg" aria-hidden="true">↓</span><span className="leading-tight"><span className="block text-[8px]">DIRECT DOWNLOAD</span><span className="block text-xs font-semibold">Android APK</span></span></a></div>
           </div>
 
           <div>
