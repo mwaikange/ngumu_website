@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const apkUrl = "https://drive.google.com/uc?export=download&id=1cK-cC08sefHyg8wpGwLy1bMcUs6A8Pko"
+const apkUrl = "https://drive.google.com/file/d/1O1fNLsC0c4j6Hu-t5ka6iQGVkQl_AB2E/view?ts=6ab30b4d"
 
 export function Footer() {
   return (
