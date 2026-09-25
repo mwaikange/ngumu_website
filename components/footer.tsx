@@ -27,7 +27,8 @@ export function Footer() {
             <div className="mt-5 space-y-3 text-sm">
               <p><Link href="/privacy-policy" className="transition-colors hover:text-white">Privacy Policy</Link></p>
               <p><Link href="/terms-of-service" className="transition-colors hover:text-white">Terms of Service</Link></p>
-              <p><Link href="/request-account-removal" className="transition-colors hover:text-white">Security</Link></p>
+              <p><Link href="/request-account-removal" className="transition-colors hover:text-white">Request Account Removal</Link></p>
+              <p><Link href="/child-safety" className="transition-colors hover:text-white">Child Safety &amp; CSAE Standards</Link></p>
             </div>
           </div>
 
